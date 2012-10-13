@@ -1,0 +1,21 @@
+doctype 5
+html
+  head
+    title InnoViz
+
+    ==stylesheet_link_tag :application
+    ==javascript_include_tag :jquery, 'foundation/jquery.foundation.topbar.js'
+
+  body
+    nav.contain-to-grid.top-bar
+      ul
+        li.name
+          h1
+            a href=url(:base, :index) title="InnoViz Home"
+              | InnoViz
+
+
+    ==yield
+
+    javascript:
+      $(document).foundationTopBar();

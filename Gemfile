@@ -1,7 +1,7 @@
 source :rubygems
 
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
 # Project requirements
@@ -11,6 +11,8 @@ gem 'sinatra-flash', :require => 'sinatra/flash'
 # Component requirements
 gem 'compass'
 gem 'slim'
+gem 'zurb-foundation'
+gem 'bluecloth'
 gem 'mongomatic'
 gem 'bson_ext', :require => "mongo"
 
