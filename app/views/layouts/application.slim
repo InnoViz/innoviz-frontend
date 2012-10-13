@@ -7,13 +7,7 @@ html
     ==javascript_include_tag :jquery, 'foundation/jquery.foundation.topbar.js'
 
   body
-    nav.contain-to-grid.top-bar
-      ul
-        li.name
-          h1
-            a href=url(:base, :index) title="InnoViz Home"
-              | InnoViz
-
+    ==partial 'base/nav'
 
     ==yield
 
