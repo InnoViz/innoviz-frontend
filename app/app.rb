@@ -7,6 +7,8 @@ class InnovizFrontend < Padrino::Application
 
   enable :sessions
 
+  set :slim, :pretty => true
+
   ##
   # Caching support
   #
